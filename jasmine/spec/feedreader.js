@@ -93,7 +93,7 @@ $(function() {
 
     /* A new test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
-      var oldFeed;
+        var oldFeed;
         /* A test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          */
@@ -108,4 +108,5 @@ $(function() {
           expect($('.feed').html()).not.toEqual(oldFeed);
         });
     });
+
 }());
