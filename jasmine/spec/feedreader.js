@@ -87,6 +87,9 @@ $(function() {
         beforeEach(function(done) {
           loadFeed(0, done);
         });
+        it('feed contains at least one element', function () {
+          expect($('.feed .entry').length).toBeGreaterThan(0);
+        });
     });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
